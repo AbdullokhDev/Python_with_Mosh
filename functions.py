@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 22 09:00:40 2021
-
-@author: Abdulloh
-"""
-
 # def greet():
 #     print("Hello world")
 #     print("Welcome to programming world")
@@ -62,14 +55,26 @@ Created on Wed Dec 22 09:00:40 2021
 # print(calculate(3,4,5,6))
     
     
-def save_user(**user):
-    print(user)
+# def save_user(**user):
+#     print(user)
 
-save_user(id=1, name="Abdullokh", age=22)
+# save_user(id=1, name="Abdullokh", age=22)
     
+
+# def save_user_with_one_argument(**user):
+#     print(user["name"])
     
+# save_user_with_one_argument(id=1, name="Mosh", age=44)
     
-    
+# debugging
+def calculate(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+        return total
+
+print("start")
+print(calculate(3,4,5,6))
     
     
     
