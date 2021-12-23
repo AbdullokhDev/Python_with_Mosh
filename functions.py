@@ -67,15 +67,34 @@
 # save_user_with_one_argument(id=1, name="Mosh", age=44)
     
 # debugging
-def calculate(*numbers):
-    total = 1
-    for number in numbers:
-        total *= number
-        return total
+# def calculate(*numbers):
+#     total = 1
+#     for number in numbers:
+#         total *= number
+#     return total
 
-print("start")
-print(calculate(3,4,5,6))
-    
+# print("start")
+# print(calculate(3,4,5,6))
+
+# 1 aprroach
+# def fizz_buzz(input):
+#     if input % 3 == 0:
+#         result = "Fizz"
+#     else:
+#         result = "Buzz"
+#     return result
+# print(fizz_buzz(3))
+
+# 2 approach
+def fizz_buzz(input):
+    if (input % 3 == 0) and (input % 5 == 0):
+        return "FizzBuzz"
+    if input % 3 == 0:
+        return "Fizz"
+    if input % 5 == 0:
+        return "Buzz"
+    return input
+print(fizz_buzz(7))
     
     
     
