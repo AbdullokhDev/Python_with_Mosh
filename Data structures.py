@@ -66,18 +66,57 @@
     
 # print(prices)
 
-items = [
-    ("Product1", 10),
-    ("Prroduct2", 9),
-    ("Product3", 12),
-    ]
-x = map(lambda item: item[1], items)
-for item in x:
-    print(item)
+# items = [
+#     ("Product1", 10),
+#     ("Prroduct2", 9),
+#     ("Product3", 12),
+#     ]
+# prices = list(map(lambda item: item[1], items))
+# print(prices)
 
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 8),
+#     ("Prodcut3", 12),
+#     ("Product4", 15),
+#     ]
 
+# # prices = list(map(lambda item: item[1], items))
+# # list comprhensions is similar to map lambda and preffered using it
+# prices = [item[1] for item in items]
+# print(prices)
 
+# deque importing
+# from collections import deque
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# queue.popleft()
+# print(queue)
+# if not queue:
+#     print("empty")
 
+# x = 10
+# y = 11
+
+# z = x
+# x = y
+# y = z
+
+# print("x", x)
+# print("y", y)
+
+# x = 11
+# y = 22
+
+# x, y = y, x
+# print("x", x)
+# print("y", y)
+
+numbers = [1, 2, 3, 3, 4, 5, 6, 6, 6, 6, 7, 8, 9, 9]
+uniques = set(numbers)
+print(uniques)
 
 
 
