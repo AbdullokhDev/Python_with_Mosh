@@ -114,13 +114,21 @@
 # print("x", x)
 # print("y", y)
 
-numbers = [1, 2, 3, 3, 4, 5, 6, 6, 6, 6, 7, 8, 9, 9]
-uniques = set(numbers)
-print(uniques)
+# numbers = [1, 2, 3, 3, 4, 5, 6, 6, 6, 6, 7, 8, 9, 9]
+# uniques = set(numbers)
+# print(uniques)
 
+# numbers = [1, 1, 2, 3, 4]
+# first = set(numbers)
+# second = {1, 5}
 
+# print(first | second)
+# print(first & second)
+# print(first - second)
+# print(first ^ second)
 
-
-
+point = {"x": 1, "y": 2}
+#point = dict(x=1, y=1)
+print(point)
 
 
