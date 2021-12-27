@@ -174,22 +174,8 @@ for char in sentence:
         char_frequency[char] = 1
 # pprint(char_frequency, width=1)
 
-char_frequency_sorted = (sorted(char_frequency.items(), key=lambda kv: kv[1], reverse=True))
+char_frequency_sorted = (sorted(
+    char_frequency.items(), 
+    key=lambda kv: kv[1], 
+    reverse=True))
 print(char_frequency_sorted[0])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
