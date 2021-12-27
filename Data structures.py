@@ -127,8 +127,59 @@
 # print(first - second)
 # print(first ^ second)
 
-point = {"x": 1, "y": 2}
-#point = dict(x=1, y=1)
-print(point)
+# point = {"x": 1, "y": 2}
+# point = dict(x=1, y=2)
+# print(point)
+
+# values = []
+# for x in range(5):
+#     values.append(x * 2)
+    
+# values = {x * 2 for x in range(5)}
+# print(values)
+
+from sys import getsizeof
+
+# values = (x * 2 for x in range(100000))
+# print("gen:", getsizeof(values))
+
+# values = [x * 2 for x in range(100000)]
+# print("list:", getsizeof(values))
+
+# unpacking operator *
+
+# numbers = [1, 2, 3]
+# print(numbers)
+# print(*numbers)
+# print(1, 2, 3)
+
+# values = list(range(5))
+# values = [*range(5), *"Hello"]
+# print(values)
+
+first = {"x": 1}
+second = {"x": 10, "y": 2}
+combinedDic = {**first, **second, "z": 111}
+print(combinedDic)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
