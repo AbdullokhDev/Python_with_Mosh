@@ -225,42 +225,6 @@ from collections import namedtuple
 #         return self.x == other.x and self.y == other.y
   
 Point = namedtuple("Point", ["x", "y"])
-p1 = Point(1, 2)
-p2 = Point(1, 2)
+p1 = Point(x=1, y=2)
+p2 = Point(x=1, y=2)
 print(p1 == p2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
