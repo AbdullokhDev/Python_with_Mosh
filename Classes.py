@@ -173,31 +173,74 @@
 # stream = MemoryStream(
 # stream.open()
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class UIControl(ABC):
-    @abstractmethod
-    def draw(self):
-        pass
+# # class UIControl(ABC):
+# #     @abstractmethod
+# #     def draw(self):
+# #         pass
     
-class TextBox(UIControl):
-    def draw(self):
-        print("Text box")
+# class TextBox:
+#     def draw(self):
+#         print("Text box")
     
-class DropDownList(UIControl):
-    def draw(self):
-        print("Drop down list")
+# class DropDownList:
+#     def draw(self):
+#         print("Drop down list")
 
-def draw(controls):
-    for control in controls:
-        control.draw()
+# def draw(controls):
+#     for control in controls:
+#         control.draw()
 
-ddl = DropDownList()
-tb = TextBox()
-print(isinstance(ddl, UIControl))
-#draw(ddl)
-#draw(tb)
-draw([ddl, tb])
+# ddl = DropDownList()
+# tb = TextBox()
+# #print(isinstance(ddl, UIControl))
+# #draw(ddl)
+# #draw(tb)
+# draw([ddl, tb])
+
+# class Text(str):
+#     def duplicate(self):
+#         return self + self
+    
+# #text = Text("Python")
+# #print(text.lower())
+
+
+# class TrackableList(list):
+#     def append(self, object):
+#         print("Append called")
+#         super().append(object)
+
+# list = TrackableList()
+# list.append("1")
+
+from collections import namedtuple
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+        
+#     def __eq__(self, other):
+#         return self.x == other.x and self.y == other.y
+  
+Point = namedtuple("Point", ["x", "y"])
+p1 = Point(1, 2)
+p2 = Point(1, 2)
+print(p1 == p2)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
